@@ -1,0 +1,254 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+        integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+        integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Prakruthi Hospital</title>
+    <link rel="stylesheet" href="css/services_style.css">
+
+     <script>
+        function openService(id) {
+            const sections = document.querySelectorAll(".detail-section");
+            sections.forEach(sec => sec.style.display = "none");
+
+            const active = document.getElementById(id);
+            if (active) {
+                active.style.display = "block";
+                active.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            openService('srv-gyn');
+        });
+    </script>
+</head>
+
+<body>
+
+ 
+    <nav class="navbar navbar-expand-lg shadow-sm bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.jpg" class="logo-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item ms-3"><a href="contact.html" class="btn btn-appointment">Book Appointment</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+   
+    <section class="services-header text-center">
+        <h1>Our Medical Services</h1>
+        <p>Expert care across Gynecology, Obstetrics, Surgery & Women’s Health</p>
+    </section>
+
+
+    
+    <section class="container py-4">
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card" onclick="openService('gyn')">
+                    <i class="fa-solid fa-venus service-icon"></i>
+                    <h3>Gynecology</h3>
+                    <p>Complete women’s health care</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card" onclick="openService('obs')">
+                    <i class="fa-solid fa-baby service-icon"></i>
+                    <h3>Obstetrics</h3>
+                    <p>Pregnancy care & delivery</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card" onclick="openService('lap')">
+                    <i class="fa-solid fa-stethoscope service-icon"></i>
+                    <h3>Laparoscopy</h3>
+                    <p>Advanced minimally invasive surgery</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card" onclick="openService('surg')">
+                    <i class="fa-solid fa-user-doctor service-icon"></i>
+                    <h3>General Surgery</h3>
+                    <p>Comprehensive surgical care</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <div class="container detail-section-wrapper">
+
+
+       
+        <div id="gyn" class="detail-section">
+            <div class="detail-header">
+                <h2>Gynecology Services</h2>
+                <span>Complete women’s healthcare</span>
+            </div>
+
+            <div class="row align-items-start g-4 service-row">
+                <div class="col-lg-6">
+                    <ul class="detail-list">
+                        <li>Menstrual Disorders Treatment</li>
+                        <li>PCOS / PCOD Management</li>
+                        <li>Thyroid & High Blood Pressure (Women specific)</li>
+                        <li>White Discharge Treatment</li>
+                        <li>Uterine Fibroids</li>
+                        <li>Ovarian Cyst Diagnosis & Treatment</li>
+                        <li>Endometriosis Care</li>
+                        <li>Pelvic Pain Evaluation</li>
+                        <li>Cervical Screening (Pap Smear)</li>
+                        <li>Breast Examination & Screening</li>
+                        <li>Vaginal Infections / UTI Treatment</li>
+                        <li>Hormonal Imbalance Treatment</li>
+                        <li>Family Planning & Counselling</li>
+                        <li>Menopause Management</li>
+                        <li>Infertility Evaluation & Treatment</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="assets/images/Gynecology Service.jpg" class="service-side-img">
+                </div>
+            </div>
+        </div>
+
+
+
+      
+        <div id="obs" class="detail-section">
+            <div class="detail-header">
+                <h2>Obstetrics Services</h2>
+                <span>Safe pregnancy, expert delivery care</span>
+            </div>
+
+            <div class="row align-items-start g-4 service-row">
+                <div class="col-lg-6">
+                    <ul class="detail-list">
+                        <li>Routine Pregnancy Check-ups</li>
+                        <li>High-Risk Pregnancy Management</li>
+                        <li>Antenatal (Prenatal) Care</li>
+                        <li>Ectopic Pregnancy Treatment</li>
+                        <li>Normal Delivery</li>
+                        <li>Painless / Epidural Delivery</li>
+                        <li>Cesarean Section (C-Section)</li>
+                        <li>Postnatal Care</li>
+                        <li>Fetal Growth Monitoring</li>
+                        <li>Ultrasound Scans</li>
+                        <li>Pregnancy Diet Counselling</li>
+                        <li>Pregnancy Complication Management</li>
+                        <li>Post-delivery Recovery Support</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="assets/images/Obstetrics service.jpg" class="service-side-img">
+                </div>
+            </div>
+        </div>
+
+
+
+     
+        <div id="lap" class="detail-section">
+            <div class="detail-header">
+                <h2>Gynecology Laparoscopic Procedures</h2>
+                <span>Minimally invasive advanced treatments</span>
+            </div>
+
+            <div class="row align-items-start g-4 service-row">
+                <div class="col-lg-6">
+                    <ul class="detail-list">
+                        <li>Laparoscopic Hysterectomy (TLH)</li>
+                        <li>Laparoscopic Myomectomy (Fibroid Removal)</li>
+                        <li>Laparoscopic Ovarian Cystectomy</li>
+                        <li>Laparoscopic Endometriosis Surgery</li>
+                        <li>Laparoscopic Ectopic Pregnancy Surgery</li>
+                        <li>Laparoscopic Tubal Recanalization</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="assets/images/Laparoscopic Gynecology_service.jpg" class="service-side-img">
+                </div>
+            </div>
+        </div>
+
+
+
+      
+        <div id="surg" class="detail-section">
+            <div class="detail-header">
+                <h2>General & Laparoscopic Surgery</h2>
+                <span>Comprehensive surgical care</span>
+            </div>
+
+            <div class="row align-items-start g-4 service-row">
+                <div class="col-lg-6">
+                    <ul class="detail-list">
+                        <li>Appendix Surgery</li>
+                        <li>Gallbladder Stone Removal</li>
+                        <li>Hernia Repair (All Types)</li>
+                        <li>Hydrocele Surgery</li>
+                        <li>Circumcision</li>
+                        <li>Piles, Fissure & Fistula Surgery</li>
+                        <li>Thyroid Surgery</li>
+                        <li>Hysterectomy</li>
+                        <li>Vasectomy</li>
+                        <li>Breast Lump Removal</li>
+                        <li>Varicose Veins Treatment</li>
+                        <li>Diabetic Foot Surgery</li>
+                        <li>Trauma & Accident Surgery</li>
+                        <li>Abscess Drainage</li>
+                        <li>Lipoma / Cyst Removal</li>
+                        <li>Hemorrhoidectomy</li>
+                        <li>Minor & Major Surgical Procedures</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="assets/images/General Surgery_service.jpg" class="service-side-img">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html> -->

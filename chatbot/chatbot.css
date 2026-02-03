@@ -1,0 +1,131 @@
+/* CHAT ICON */
+#chatbot-toggle {
+  position: fixed;
+  bottom: 90px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  background: #00897b;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* CHAT BOX */
+#chatbot-box {
+  position: fixed;
+  bottom: 160px;
+  right: 25px;
+  width: 320px;
+  height: 420px;
+  background: #ffffff;
+  border-radius: 12px;
+  display: none;
+  flex-direction: column;
+  z-index: 9999;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* HEADER */
+.chatbot-header {
+  background: #00695c;
+  color: #ffffff;
+  padding: 12px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px 12px 0 0;
+}
+
+.chatbot-header button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* BODY */
+.chatbot-body {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background: #f4f7f7;
+  font-size: 14px;
+}
+
+/* MESSAGES */
+.bot-msg {
+  background: #e0f2f1;
+  color: #004d40;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  max-width: 85%;
+}
+
+.user-msg {
+  background: #ff7a00;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-bottom: 8px;
+  max-width: 85%;
+}
+
+/* FOOTER */
+.chatbot-footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #dddddd;
+}
+
+.chatbot-footer input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+  outline: none;
+}
+
+.chatbot-footer button {
+  margin-left: 8px;
+  background: #00897b;
+  border: none;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* QUICK ACTION BUTTONS */
+.quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.quick-actions button {
+  background: #e0f2f1;
+  border: 1px solid #00897b;
+  color: #00695c;
+  padding: 6px 12px;
+  border-radius: 18px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quick-actions button:hover {
+  background: #00897b;
+  color: #ffffff;
+}
+

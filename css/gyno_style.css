@@ -1,0 +1,292 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #99d6d2;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    padding: 12px 0;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.logo-img {
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333 !important;
+    padding: 8px 5px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #009A8F !important;
+}
+
+.btn-appointment {
+    font-size: 18px;
+    font-weight: 600;
+    background: #F36C21;
+    padding: 10px 25px;
+    border-radius: 8px;
+    color: #fff !important;
+}
+
+.btn-appointment:hover {
+    background: #d45717;
+}
+
+
+.services-header {
+    padding: 60px 0 40px;
+    background: linear-gradient(to bottom, #e5fffc, #ffffff);
+    text-align: center;
+}
+
+.services-header h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #009A8F;
+}
+
+.services-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+
+.service-card {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 18px;
+    text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+}
+
+.service-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #009A8F;
+}
+
+.service-card h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+
+
+.section-title {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #009A8F;
+    margin-top: -10px;  
+    margin-bottom: 10px;
+}
+.page-desc{
+    text-align: justify;
+}
+
+
+.section-subtitle {
+    color: #555;
+    max-width: 750px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+
+
+
+.service-flex {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 20px;
+    margin: 55px 0;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+    align-items: center;
+    gap: 40px;
+}
+
+
+.service-flex.reverse {
+    flex-direction: row-reverse;
+}
+
+
+.service-content {
+    flex: 1;
+}
+
+.service-heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #009A8F;
+    margin-bottom: 12px;
+}
+
+.service-desc {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+
+.service-feature {
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    color: #444;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.service-feature i {
+    color: #009A8F;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+
+.service-image-box {
+    flex: 1;
+    text-align: center;
+}
+
+.service-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+
+@media (max-width: 992px) {
+    .service-flex,
+    .service-flex.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-image-box {
+        margin-top: 25px;
+    }
+
+    .services-header h1 {
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-flex {
+        padding: 25px;
+    }
+
+    .service-img {
+        max-width: 100%;
+    }
+
+    .service-heading {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* FOOTER BASE */
+.footer {
+    background: #009A8F;
+}
+
+.footer-col {
+    min-height: 200px;
+}
+
+.footer-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* LINKS */
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.footer-link:hover {
+    color: #F6C15A;
+}
+
+/* LOGO BOX */
+.footer-logo-box {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    display: inline-block;
+}
+
+.footer-logo {
+    width: 110px;
+    height: auto;
+}
+
+/* BELOW LOGO TEXT */
+.footer-hospital-name {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* SOCIAL ICONS */
+.social-icons i {
+    font-size: 26px;
+    color: white;
+    transition: 0.3s ease;
+}
+.social-icons i:hover {
+    color: #F6C15A;
+}
+
+/* EQUAL SPACING */
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    font-size: 0.95rem;
+}

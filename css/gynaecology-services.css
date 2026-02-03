@@ -1,0 +1,393 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #cceae8 !important;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #009A8F;
+    text-align: center;
+}
+
+.section-desc {
+    color: #444;
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.7;
+}
+
+
+/* Emergency Bar */
+/* Emergency Bar Styling */
+.emergency-bar {
+    background: #007a72;
+    padding: 8px 0;
+    font-size: 0.95rem;
+}
+
+.emergency-bar span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.emergency-btn {
+    background: #F36C21;
+    color: #fff !important;
+    padding: 6px 18px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.emergency-btn:hover {
+    background: #d85a19;
+}
+
+
+
+
+
+
+.navbar {
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background: #fff;
+}
+
+.logo-img {
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0 12px;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333 !important;
+    padding: 8px 5px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #009A8F !important;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+.navbar .dropdown-menu {
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+
+
+.dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.dropdown-item {
+    font-size: 18px;
+    padding: 10px 16px;
+}
+
+.dropdown-item:hover {
+    background: #009A8F;
+    color: white;
+}
+
+
+.btn-appointment {
+    font-size: 18px;
+    font-weight: 600;
+    background: #F36C21;
+    padding: 10px 25px;
+    border-radius: 8px;
+    color: #fff !important;
+}
+
+.btn-appointment:hover {
+    background: #d45717;
+}
+
+
+/* ------------------------------
+   GYNAECOLOGY PAGE STYLING
+------------------------------ */
+
+body {
+    background: #f8f9fa;
+}
+
+/* Page Header */
+.page-header {
+    background: #007a72;
+    color: white;
+    padding: 40px 0;
+    /* border-radius: 0 0 20px 20px; */
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.page-header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #007a72;
+}
+
+.page-desc {
+    color: #444;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+/* SERVICE CONTAINER */
+.service-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.service-flex.reverse {
+    flex-direction: row-reverse;
+}
+
+/* TEXT CONTENT */
+.service-content {
+    flex: 1;
+}
+
+.service-heading {
+    font-size: 28px;
+    font-weight: 700;
+    color: #007a72;
+    margin-bottom: 10px;
+}
+
+.service-desc {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #444;
+    text-align: justify;
+}
+
+.service-feature {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.service-feature i {
+    color: #F36C21 !important; 
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+/* IMAGE BOX */
+.service-image-box {
+    flex: 1;
+}
+
+.service-img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+    .service-flex,
+    .service-flex.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-img {
+        width: 90%;
+        margin: auto;
+    }
+
+    .service-feature {
+        text-align: left;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-heading {
+        font-size: 24px;
+    }
+    
+    .service-desc {
+        font-size: 15px;
+    }
+}
+
+.footer {
+    background: #009A8F;
+}
+
+.footer-col {
+    min-height: 200px;
+}
+
+.footer-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* LINKS */
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.footer-link:hover {
+    color: #d45717;
+}
+
+/* LOGO BOX */
+.footer-logo-box {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    display: inline-block;
+}
+
+.footer-logo {
+    width: 110px;
+    height: auto;
+}
+
+/* BELOW LOGO TEXT */
+.footer-hospital-name {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* SOCIAL ICONS */
+.social-icons i {
+    font-size: 26px;
+    color: white;
+    transition: 0.3s ease;
+}
+.social-icons i:hover {
+    color: #d45717;
+}
+
+/* EQUAL SPACING */
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    font-size: 0.95rem;
+}
+
+
+/* =========================
+   FLOATING CALL & WHATSAPP
+========================= */
+
+.floating-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 9999;
+}
+
+.float-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Call Button */
+.call-btn {
+    background: #00c389;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background: #25D366;
+}
+
+/* Hover Effect */
+.float-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+/* Mobile adjustment */
+@media (max-width: 576px) {
+    .float-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+}
+
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+    70% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-btn {
+    animation: pulse 2s infinite;
+}

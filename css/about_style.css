@@ -1,0 +1,395 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #007f7b;
+}
+
+.section-desc {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.emergency-bar {
+    background: #007a72;
+    padding: 8px 0;
+    font-size: 0.95rem;
+}
+
+.emergency-bar span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.emergency-btn {
+    background: #F36C21;
+    color: #fff !important;
+    padding: 6px 18px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.emergency-btn:hover {
+    background: #d85a19;
+}
+
+
+.navbar {
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background: #fff;
+}
+
+.logo-img {
+    height: 90px;      
+    width: auto;        
+    object-fit: contain;
+}
+
+
+.navbar-nav {
+    align-items: center;  
+}
+
+.nav-item {
+    padding: 0 12px;      
+}
+
+.nav-link {
+    font-size: 20px;      
+    font-weight: 600;     
+    color: #333 !important;
+    padding: 8px 5px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #009A8F !important;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+
+.dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.dropdown-item {
+    font-size: 18px;
+    padding: 10px 16px;
+}
+
+.dropdown-item:hover {
+    background: #009A8F;
+    color: white;
+}
+
+.btn-appointment,
+.book-btn {
+    font-size: 18px;
+    font-weight: 600;
+    background: #F36C21;
+    padding: 10px 25px;
+    border-radius: 8px;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.btn-appointment:hover,
+.book-btn:hover {
+    background: #d45717;
+}
+
+
+
+
+.about-banner {
+    height: 45vh;
+    background: url('../assets/images/aboutbanner.jpg') center/cover no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    border-radius: 0 0 20px 20px;
+}
+
+
+
+.about-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.stats-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stats-box div {
+    background: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stats-box h3 {
+    color: #F36C21;
+    font-size: 2rem;
+}
+
+
+.doctors-section {
+    background: #f8fffe;
+}
+
+.doctor-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+
+.doctor-card-img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;           
+    background: #e9f8f7;         
+    padding: 12px;
+    border-radius: 15px 15px 0 0;
+}
+
+.doctor-info {
+    padding: 22px;
+    text-align: center;
+}
+
+.doctor-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #F36C21;
+}
+
+.doctor-qual {
+    margin: 4px 0;
+    font-weight: 500;
+    color: #009A8F;
+}
+
+.doctor-spec {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+
+.why-us {
+    background: #f8f9fa;
+}
+
+.why-card {
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-weight: 500;
+}
+
+
+/* Mission & Vision Section */
+.mission-vision-section {
+    background: #f5fffd; /* very light teal tint */
+}
+
+.mv-box {
+    background: #ffffff;
+    border-left: 6px solid #009688; /* theme color */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.mv-box h3 {
+    color: #009688;
+    font-weight: 700;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mv-box p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.mv-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
+}
+
+/* Title */
+.mission-vision-section .section-title {
+    color: #007a72; /* theme darker teal */
+    font-weight: 700;
+}
+
+
+
+
+
+/* FOOTER BASE */
+.footer {
+    background: #009A8F;
+}
+
+.footer-col {
+    min-height: 200px;
+}
+
+.footer-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* LINKS */
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.footer-link:hover {
+    color: #d45717;
+}
+
+/* LOGO BOX */
+.footer-logo-box {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    display: inline-block;
+}
+
+.footer-logo {
+    width: 110px;
+    height: auto;
+}
+
+/* BELOW LOGO TEXT */
+.footer-hospital-name {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* SOCIAL ICONS */
+.social-icons i {
+    font-size: 26px;
+    color: white;
+    transition: 0.3s ease;
+}
+.social-icons i:hover {
+    color: #d45717;
+}
+
+/* EQUAL SPACING */
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    font-size: 0.95rem;
+}
+
+
+
+/* =========================
+   FLOATING CALL & WHATSAPP
+========================= */
+
+.floating-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 9999;
+}
+
+.float-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Call Button */
+.call-btn {
+    background: #00c389;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background: #25D366;
+}
+
+/* Hover Effect */
+.float-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+/* Mobile adjustment */
+@media (max-width: 576px) {
+    .float-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+}
+
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+    70% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-btn {
+    animation: pulse 2s infinite;
+}

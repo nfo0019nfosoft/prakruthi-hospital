@@ -1,0 +1,192 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+}
+
+
+.logo-img {
+    height: 90px;
+    object-fit: contain;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333 !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #009A8F !important;
+}
+
+.btn-appointment {
+    background: #F36C21;
+    color: #fff !important;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.page-header {
+    padding: 60px 0 30px;
+    background: linear-gradient(to bottom, #e8fffc, #ffffff);
+}
+
+.page-header h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #009A8F;
+}
+
+.page-desc {
+    text-align: center;
+    max-width: 900px;
+    margin: 15px auto;
+    font-size: 1.05rem;
+    color: #444;
+}
+
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #009A8F;
+}
+
+.section-subtitle {
+    font-size: 1.15rem;
+    color: #666;
+}
+
+
+.service-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    gap: 40px;
+}
+
+.service-flex.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-content {
+    flex: 1;
+}
+
+.service-heading {
+    font-size: 1.8rem;
+    color: #009A8F;
+    font-weight: 700;
+}
+
+.service-desc {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.service-feature {
+    margin: 10px 0;
+    font-size: 1.05rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.service-feature i {
+    color: #009A8F;   
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+
+
+.service-image-box {
+    flex: 1;
+}
+
+.service-img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .service-flex,
+    .service-flex.reverse {
+        flex-direction: column;
+    }
+}
+
+
+/* FOOTER BASE */
+.footer {
+    background: #009A8F;
+}
+
+.footer-col {
+    min-height: 200px;
+}
+
+.footer-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* LINKS */
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.footer-link:hover {
+    color: #F6C15A;
+}
+
+/* LOGO BOX */
+.footer-logo-box {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    display: inline-block;
+}
+
+.footer-logo {
+    width: 110px;
+    height: auto;
+}
+
+/* BELOW LOGO TEXT */
+.footer-hospital-name {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* SOCIAL ICONS */
+.social-icons i {
+    font-size: 26px;
+    color: white;
+    transition: 0.3s ease;
+}
+.social-icons i:hover {
+    color: #F6C15A;
+}
+
+/* EQUAL SPACING */
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    font-size: 0.95rem;
+}
